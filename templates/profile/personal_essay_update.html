@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+Personal Essay
+{% endblock title %}
+
+{% block content %}
+
+<h1>This is the Personal Essay page</h1>
+
+<form action="" method="post">
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    {{dicipline_formset.as_p}}
+
+    {{additional_formset.as_p}}
+
+    <input type="submit" />
+</form>
+
+{% endblock content %}

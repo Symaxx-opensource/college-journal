@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+Activity
+{% endblock title %}
+
+{% block content %}
+
+<h1>This is the Activity page</h1>
+
+<form action="" method="post">
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    {{activity_formset.as_p}}
+
+    <input type="submit" />
+</form>
+
+{% endblock content %}

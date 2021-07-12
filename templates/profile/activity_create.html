@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+Create Activity
+{% endblock title %}
+
+{% block content %}
+
+<h1>This is the Activity page</h1>
+
+<form action="" method="post">
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <input type="submit" />
+    <a class="inline-flex items-center justify-center px-4 py-1 mr-1 text-base font-medium leading-6 text-indigo-600 whitespace-no-wrap transition duration-150 ease-in-out bg-gray-600 border border-transparent rounded-md hover:bg-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700" href="">Cancel</a>
+</form>
+
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+Demographics
+{% endblock title %}
+
+{% block content %}
+
+<h1>This is the Demographics page</h1>
+
+<form action="" method="post">
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    {{language_formset.as_p}}
+
+    {{citizenship_formset.as_p}}
+
+    <input type="submit" />
+</form>
+
+{% endblock content %}
